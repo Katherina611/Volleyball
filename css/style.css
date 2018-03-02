@@ -5,12 +5,40 @@
   .menu li {
     justify-content: center;
     list-style: none;
-    flex-grow: 1; }
+    flex-grow: 1;
+    text-align: center; }
     .menu li .indexLink {
       text-decoration: none;
       color: black; }
 
 table, th, td {
-  border: 1px solid black; }
+  border: 1px solid black;
+  text-align: center; }
+
+td {
+  width: 280px; }
+
+p {
+  margin-top: 100px;
+  text-align: center; }
+
+.table1, .table2 {
+  display: flex;
+  justify-content: center; }
+
+img {
+  width: 280px;
+  height: 150px; }
+
+section {
+  display: flex;
+  flex-wrap: wrap; }
+  section .playersTable {
+    margin-right: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */

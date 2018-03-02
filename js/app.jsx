@@ -38,6 +38,17 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     class Match extends React.Component{
         render(){
+            return (
+                <div className='match'>
+                    <Menu/>
+                    <WorldChamp/>
+                    <WorldLeague/>
+                </div>
+            )
+        }
+    }
+    class WorldChamp extends React.Component{
+        render(){
             const matchDay=[
                 {data:'12 wrzesień', hour:"20:30", rival:'Kuba'},
                 {data:'13 wrzesień', hour:"17:00", rival:'Portoryko'},
@@ -55,26 +66,122 @@ document.addEventListener('DOMContentLoaded', function(){
                 )
             });
             return (
-                <div className='match'>
-                    <Menu/>
+                <div>
                     <p>Terminarz pierwszej fazy MŚ 2018 siatkarzy</p>
-                    <table>
-                        <tr>
-                            <td>Data spotkania</td>
-                            <td>Godzina meczu</td>
-                            <td>Przeciwnik</td>
-                        </tr>
-                        {matchlist}
-                    </table>
+                    <div className='table1'>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Data spotkania</th>
+                                <th>Godzina meczu</th>
+                                <th>Przeciwnik</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {matchlist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            )
+        }
+    }
+    class WorldLeague extends React.Component{
+        render(){
+            const matchWeekend=[
+                {data:'25-27.05', host:"Polska", rivals:'Korea Południowa, Rosja, Kanada'},
+                {data:'1-3.06', host:"Polska", rivals:'Niemcy, Francja, Chiny'},
+                {data:'8-10.06', host:"Japonia", rivals:'Włochy, Bułgaria, Japonia'},
+                {data:'15-17.06', host:"USA", rivals:'Serbia, Iran, USA'},
+                {data:'22-24.06', host:"Australia", rivals:'Brazylia, Argentyna, Australia'}
+            ];
+            const matchLeague=matchWeekend.map((i,index)=>{
+                return (
+                    <tr key={index}>
+                        <td>{i.data}</td>
+                        <td>{i.host}</td>
+                        <td>{i.rivals}</td>
+                    </tr>
+                )
+            });
+            return (
+                <div>
+                    <p>Terminarz Ligi Światowej 2018 siatkarzy</p>
+                    <div className='table2'>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Data spotkań</th>
+                                <th>Gospodarz spotkania</th>
+                                <th>Przeciwnicy</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {matchLeague}
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
             )
         }
     }
     class Players extends React.Component{
         render(){
+            const playersInfo=[
+                {name:'Piotr Nowakowski', number:'1', data:"18 grudnia 1987r. Żyrandów", height:'205 cm',weight:'100kg', position:'środkowy', attack:'368 cm', block:'350cm', club:'Trefl Gdańsk', img:'images/Piotr-Nowakowski.jpg'},
+                {name:'Dawid Konarski', number:'3', data:"31 sierpnia 1989r. Świecie", height:'198 cm',weight:'101kg', position:'atakujący', attack:'355 cm', block:'335cm', club:'Ziraat Bankası Ankara', img:'images/Dawid-Konarski.jpeg'},
+                {name:'Bartosz Kurek', number:'6', data:"29 sierpnia 1988r. Wałbrzych", height:'205 cm',weight:'105kg', position:'przyjmujący/atakujący', attack:'375 cm', block:'340cm', club:'Ziraat Bankası Ankara', img:'images/Bartosz-Kurek.jpg'},
+                {name:'Karol Kłos', number:'7', data:"8 sierpnia 1989r. Warszawa", height:'201 cm',weight:'87kg', position:'środkowy', attack:'360 cm', block:'330cm', club:'PGE Skra Bełchatów', img:'images/Karol-Kłos.jpg'},
+                {name:'Andrzej Wrona', number:'8', data:"27 grudnia 1988r. Warszawa", height:'206 cm',weight:'95kg', position:'środkowy', attack:'355 cm', block:'335cm', club:'ONICO Warszawa', img:'images/Andrzej-Wrona.jpeg'},
+                {name:'Bartłomiej Lemański', number:'9', data:"19 marca 1996r. Warszawa", height:'217 cm',weight:'105kg', position:'środkowy', attack:'355 cm', block:'335cm', club:'Asseco Resovia Rzeszów', img:'images/Bartłomiej-Lemański.jpeg'},
+            ];
+            const players=playersInfo.map((i, index)=>{
+                return (
+                    <div key={index} className='playersTable'>
+                        <table className='table3'>
+                        <tbody>
+                        <tr>
+                            <td><img src={i.img}/></td>
+                        </tr>
+                        <tr>
+                            <td>{i.name}</td>
+                        </tr>
+                            <tr>
+                                <td>Data i miejsce urodzenia: {i.data}</td>
+                            </tr>
+                            <tr>
+                                <td>Wzrost: {i.height}</td>
+                            </tr>
+                            <tr>
+                                <td>Waga: {i.weight}</td>
+                            </tr>
+                            <tr>
+                                <td>Pozycja: {i.position}</td>
+                            </tr>
+                            <tr>
+                                <td>Numer w reprezentacji: {i.number}</td>
+                            </tr>
+                            <tr>
+                                <td>Zasięg w ataki: {i.attack}</td>
+                            </tr>
+                            <tr>
+                                <td>Zasięg w bloku: {i.block}</td>
+                            </tr>
+                            <tr>
+                                <td>Obecny klub: {i.club}</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                )
+            });
             return (
                 <div className='players'>
                     <Menu/>
+                    <section>
+                        {players}
+                    </section>
                 </div>
             )
         }
