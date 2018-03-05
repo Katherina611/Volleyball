@@ -14187,7 +14187,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return _react2.default.createElement(
                     'div',
                     { className: 'news' },
-                    _react2.default.createElement(Menu, null)
+                    _react2.default.createElement(Menu, null),
+                    _react2.default.createElement(News1, null)
                 );
             }
         }]);
@@ -14195,8 +14196,83 @@ document.addEventListener('DOMContentLoaded', function () {
         return News;
     }(_react2.default.Component);
 
-    var Match = function (_React$Component4) {
-        _inherits(Match, _React$Component4);
+    var News1 = function (_React$Component4) {
+        _inherits(News1, _React$Component4);
+
+        function News1() {
+            _classCallCheck(this, News1);
+
+            return _possibleConstructorReturn(this, (News1.__proto__ || Object.getPrototypeOf(News1)).apply(this, arguments));
+        }
+
+        _createClass(News1, [{
+            key: 'render',
+            value: function render() {
+                return _react2.default.createElement(
+                    'div',
+                    { className: 'news1' },
+                    _react2.default.createElement('img', { src: 'images/trener.jpg' }),
+                    _react2.default.createElement(
+                        'span',
+                        null,
+                        _react2.default.createElement(
+                            _reactRouter.IndexLink,
+                            { to: '/news/news1' },
+                            'Kim jest nowy trener polskich siatkarzy?'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Ma 48 lat, biegle w\u0142ada kilkoma j\u0119zykami i ma niekonwencjonalny spos\xF3b prowadzenia dru\u017Cyn \u2013 Belg Vital Heynen zosta\u0142 selekcjonerem kadry polskich siatkarzy i podj\u0105\u0142 si\u0119 trudnego zadania. W swojej karierze udowodni\u0142, \u017Ce umie poprowadzi\u0107 zesp\xF3\u0142 do sukces\xF3w.'
+                        )
+                    )
+                );
+            }
+        }]);
+
+        return News1;
+    }(_react2.default.Component);
+
+    var News1Extend = function (_React$Component5) {
+        _inherits(News1Extend, _React$Component5);
+
+        function News1Extend() {
+            _classCallCheck(this, News1Extend);
+
+            return _possibleConstructorReturn(this, (News1Extend.__proto__ || Object.getPrototypeOf(News1Extend)).apply(this, arguments));
+        }
+
+        _createClass(News1Extend, [{
+            key: 'render',
+            value: function render() {
+                return _react2.default.createElement(
+                    'div',
+                    { className: 'coach' },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'Kim jest nowy trener polskich siatkarzy?'
+                    ),
+                    _react2.default.createElement('img', { src: 'images/trener.jpg' }),
+                    _react2.default.createElement(
+                        'span',
+                        null,
+                        'Opinie o Heynenie s\u0105 r\xF3\u017Cne. Jedni m\xF3wi\u0105, \u017Ce to selekcjoner na lata, inni, \u017Ce dobry na rok. Pewne jest, \u017Ce Belg potrafi znale\u017A\u0107 wsp\xF3lny j\u0119zyk z wielkimi gwiazdami, a tak\u017Ce z juniorami. Potrafi scali\u0107 zesp\xF3\u0142, sprawi\u0107, by wszyscy szli za nim w ogie\u0144. Udowodni\u0142 to ju\u017C dwukrotnie \u2013 najpierw z reprezentacj\u0105 Niemiec, a potem Belgii. W wy\u015Bcigu o fotel szkoleniowca polskiej kadry w ostatnim etapie pokona\u0142 dw\xF3ch Polak\xF3w \u2013 Piotra Gruszk\u0119 i Andrzeja Kowala. Mia\u0142 jedn\u0105 wa\u017Cn\u0105 przewag\u0119 nad pozosta\u0142ymi kandydatami \u2013 prowadzi\u0142 ju\u017C narodowe kadry i to z sukcesem. Belg prowadzi\u0142 tak\u017Ce kilka zespo\u0142\xF3w klubowych. Teraz jest trenerem niemieckiego VfB Friedrichshafen i dosta\u0142 zgod\u0119 od polskiego zwi\u0105zku, by \u0142\u0105czy\u0107 oba stanowiska. Znany jest tak\u017Ce z PlusLigi \u2013 w latach 2013-15 pracowa\u0142 z siatkarzami Transferu Bydgoszcz. A szkoleniow\u0105 karier\u0119 zaczyna\u0142 z Noliko Maseeik, belgijski klub obj\u0105\u0142 w 2005 roku i sp\u0119dzi\u0142 tam siedem lat. Wcze\u015Bniej wyst\u0119powa\u0142 w nim w roli rozgrywaj\u0105cego. Zreszt\u0105 to jedyny klub, z jakim by\u0142 zwi\u0105zany jako zawodnik. Rok pracowa\u0142 te\u017C w tureckim Ziraat Bankasi Ankara (2012/13) i francuskim Tours VB (2015/16).'
+                    ),
+                    _react2.default.createElement(
+                        _reactRouter.IndexLink,
+                        { to: '/news' },
+                        'Wr\xF3\u0107 do aktualno\u015Bci'
+                    )
+                );
+            }
+        }]);
+
+        return News1Extend;
+    }(_react2.default.Component);
+
+    var Match = function (_React$Component6) {
+        _inherits(Match, _React$Component6);
 
         function Match() {
             _classCallCheck(this, Match);
@@ -14220,8 +14296,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return Match;
     }(_react2.default.Component);
 
-    var WorldChamp = function (_React$Component5) {
-        _inherits(WorldChamp, _React$Component5);
+    var WorldChamp = function (_React$Component7) {
+        _inherits(WorldChamp, _React$Component7);
 
         function WorldChamp() {
             _classCallCheck(this, WorldChamp);
@@ -14259,7 +14335,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     null,
                     _react2.default.createElement(
                         'p',
-                        null,
+                        { className: 'par1' },
                         'Terminarz pierwszej fazy M\u015A 2018 siatkarzy'
                     ),
                     _react2.default.createElement(
@@ -14305,8 +14381,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return WorldChamp;
     }(_react2.default.Component);
 
-    var WorldLeague = function (_React$Component6) {
-        _inherits(WorldLeague, _React$Component6);
+    var WorldLeague = function (_React$Component8) {
+        _inherits(WorldLeague, _React$Component8);
 
         function WorldLeague() {
             _classCallCheck(this, WorldLeague);
@@ -14344,7 +14420,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     null,
                     _react2.default.createElement(
                         'p',
-                        null,
+                        { className: 'par1' },
                         'Terminarz Ligi \u015Awiatowej 2018 siatkarzy'
                     ),
                     _react2.default.createElement(
@@ -14390,8 +14466,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return WorldLeague;
     }(_react2.default.Component);
 
-    var Players = function (_React$Component7) {
-        _inherits(Players, _React$Component7);
+    var Players = function (_React$Component9) {
+        _inherits(Players, _React$Component9);
 
         function Players() {
             _classCallCheck(this, Players);
@@ -14402,7 +14478,7 @@ document.addEventListener('DOMContentLoaded', function () {
         _createClass(Players, [{
             key: 'render',
             value: function render() {
-                var playersInfo = [{ name: 'Piotr Nowakowski', number: '1', data: "18 grudnia 1987r. Żyrandów", height: '205 cm', weight: '100kg', position: 'środkowy', attack: '368 cm', block: '350cm', club: 'Trefl Gdańsk', img: 'images/Piotr-Nowakowski.jpg' }, { name: 'Dawid Konarski', number: '3', data: "31 sierpnia 1989r. Świecie", height: '198 cm', weight: '101kg', position: 'atakujący', attack: '355 cm', block: '335cm', club: 'Ziraat Bankası Ankara', img: 'images/Dawid-Konarski.jpeg' }, { name: 'Bartosz Kurek', number: '6', data: "29 sierpnia 1988r. Wałbrzych", height: '205 cm', weight: '105kg', position: 'przyjmujący/atakujący', attack: '375 cm', block: '340cm', club: 'Ziraat Bankası Ankara', img: 'images/Bartosz-Kurek.jpg' }, { name: 'Karol Kłos', number: '7', data: "8 sierpnia 1989r. Warszawa", height: '201 cm', weight: '87kg', position: 'środkowy', attack: '360 cm', block: '330cm', club: 'PGE Skra Bełchatów', img: 'images/Karol-Kłos.jpg' }, { name: 'Andrzej Wrona', number: '8', data: "27 grudnia 1988r. Warszawa", height: '206 cm', weight: '95kg', position: 'środkowy', attack: '355 cm', block: '335cm', club: 'ONICO Warszawa', img: 'images/Andrzej-Wrona.jpeg' }, { name: 'Bartłomiej Lemański', number: '9', data: "19 marca 1996r. Warszawa", height: '217 cm', weight: '105kg', position: 'środkowy', attack: '355 cm', block: '335cm', club: 'Asseco Resovia Rzeszów', img: 'images/Bartłomiej-Lemański.jpeg' }, { name: 'Damian Wojtaszek', number: '10', data: "7 września 1988r. Milcz", height: '180 cm', weight: '76kg', position: 'libero', attack: '330 cm', block: '301cm', club: 'ONICO Warszawa', img: 'images/Damian-Wojtaszek.jpeg' }, { name: 'Fabian Drzyzga', number: '11', data: "3 stycznia 1990r. Bordeaux", height: '196 cm', weight: '86kg', position: 'rozgrywający', attack: '342 cm', block: '305cm', club: 'Olympiakos Pireus', img: 'images/Fabian-Drzyzga.jpeg' }, { name: 'Grzegorz Łomacz', number: '12', data: "1 października 1987r. Ostrołęka", height: '178 cm', weight: '81kg', position: 'rozgrywający', attack: '336 cm', block: '309cm', club: 'PGE Skra Bełchatów', img: 'images/Grzegorz-Łomacz.jpg' }, { name: 'Michał Kubiak', number: '13', data: "23 lutego 1988r. Wałcz", height: '191 cm', weight: '87kg', position: 'przyjmujący', attack: '340 cm', block: '320cm', club: 'Panasonic Panthers', img: 'images/Michał-Kubiak.jpeg' }, { name: 'Paweł Zatorski', number: '17', data: "21 czerwca 1990r. Łódź", height: '184 cm', weight: '73kg', position: 'libero', attack: '328 cm', block: '304cm', club: 'ZAKSA Kędzierzyn-Koźle', img: 'images/Paweł-Zatorski.jpg' }, { name: 'Rafał Buszek', number: '21', data: "28 kwietnia 1987r. Dębica", height: '196 cm', weight: '81kg', position: 'przyjmujący', attack: '348 cm', block: '327cm', club: 'ZAKSA Kędzierzyn-Koźle', img: 'images/Rafał-Buszek.jpeg' }, { name: 'Mateusz Bieniek', number: '23', data: "5 kwietnia 1994r. Blachownia", height: '210 cm', weight: '98kg', position: 'środkowy', attack: '351 cm', block: '329cm', club: 'ZAKSA Kędzierzyn-Koźle', img: 'images/Mateusz-Bieniek.jpeg' }];
+                var playersInfo = [{ name: 'Piotr Nowakowski', number: '1', data: "18 grudnia 1987r. Żyrandów", height: '205 cm', weight: '100kg', position: 'środkowy', attack: '368 cm', block: '350cm', club: 'Trefl Gdańsk', img: 'images/Piotr-Nowakowski.jpg' }, { name: 'Dawid Konarski', number: '3', data: "31 sierpnia 1989r. Świecie", height: '198 cm', weight: '101kg', position: 'atakujący', attack: '355 cm', block: '335cm', club: 'Ziraat Bankası Ankara', img: 'images/Dawid-Konarski.jpeg' }, { name: 'Bartosz Kurek', number: '6', data: "29 sierpnia 1988r. Wałbrzych", height: '205 cm', weight: '105kg', position: 'przyjmujący/atakujący', attack: '375 cm', block: '340cm', club: 'Ziraat Bankası Ankara', img: 'images/Bartosz-Kurek.jpg' }, { name: 'Karol Kłos', number: '7', data: "8 sierpnia 1989r. Warszawa", height: '201 cm', weight: '87kg', position: 'środkowy', attack: '360 cm', block: '330cm', club: 'PGE Skra Bełchatów', img: 'images/Karol-Kłos.jpg' }, { name: 'Andrzej Wrona', number: '8', data: "27 grudnia 1988r. Warszawa", height: '206 cm', weight: '95kg', position: 'środkowy', attack: '355 cm', block: '335cm', club: 'ONICO Warszawa', img: 'images/Andrzej-Wrona.jpeg' }, { name: 'Bartłomiej Lemański', number: '9', data: "19 marca 1996r. Warszawa", height: '217 cm', weight: '105kg', position: 'środkowy', attack: '355 cm', block: '335cm', club: 'Asseco Resovia Rzeszów', img: 'images/Bartłomiej-Lemański.jpeg' }, { name: 'Damian Wojtaszek', number: '10', data: "7 września 1988r. Milcz", height: '180 cm', weight: '76kg', position: 'libero', attack: '330 cm', block: '301cm', club: 'ONICO Warszawa', img: 'images/Damian-Wojtaszek.jpeg' }, { name: 'Fabian Drzyzga', number: '11', data: "3 stycznia 1990r. Bordeaux", height: '196 cm', weight: '86kg', position: 'rozgrywający', attack: '342 cm', block: '305cm', club: 'Olympiakos Pireus', img: 'images/Fabian-Drzyzga.jpeg' }, { name: 'Grzegorz Łomacz', number: '12', data: "1 października 1987r. Ostrołęka", height: '178 cm', weight: '81kg', position: 'rozgrywający', attack: '336 cm', block: '309cm', club: 'PGE Skra Bełchatów', img: 'images/Grzegorz-Łomacz.jpg' }, { name: 'Michał Kubiak', number: '13', data: "23 lutego 1988r. Wałcz", height: '191 cm', weight: '87kg', position: 'przyjmujący', attack: '340 cm', block: '320cm', club: 'Panasonic Panthers', img: 'images/Michał-Kubiak.jpeg' }, { name: 'Aleksander Śliwka', number: '14', data: "24 maja 1995r. Jawor", height: '196 cm', weight: '83kg', position: 'przyjmujący', attack: '342 cm', block: '325cm', club: 'Asseco Resovia Rzeszów', img: 'images/Aleksander-Śliwka.jpeg' }, { name: 'Paweł Zatorski', number: '17', data: "21 czerwca 1990r. Łódź", height: '184 cm', weight: '73kg', position: 'libero', attack: '328 cm', block: '304cm', club: 'ZAKSA Kędzierzyn-Koźle', img: 'images/Paweł-Zatorski.jpg' }, { name: 'Rafał Buszek', number: '21', data: "28 kwietnia 1987r. Dębica", height: '196 cm', weight: '81kg', position: 'przyjmujący', attack: '348 cm', block: '327cm', club: 'ZAKSA Kędzierzyn-Koźle', img: 'images/Rafał-Buszek.jpeg' }, { name: 'Mateusz Bieniek', number: '23', data: "5 kwietnia 1994r. Blachownia", height: '210 cm', weight: '98kg', position: 'środkowy', attack: '351 cm', block: '329cm', club: 'ZAKSA Kędzierzyn-Koźle', img: 'images/Mateusz-Bieniek.jpeg' }, { name: 'Artur Szalpuk', number: '25', data: "20 marca 1995r. Olsztyn", height: '202 cm', weight: '91kg', position: 'przyjmujący', attack: '350 cm', block: '335cm', club: 'Traefl Gdańsk', img: 'images/Artur-Szalpuk.jpg' }];
                 var players = playersInfo.map(function (i, index) {
                     return _react2.default.createElement(
                         'div',
@@ -14531,8 +14607,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return Players;
     }(_react2.default.Component);
 
-    var Gallery = function (_React$Component8) {
-        _inherits(Gallery, _React$Component8);
+    var Gallery = function (_React$Component10) {
+        _inherits(Gallery, _React$Component10);
 
         function Gallery() {
             _classCallCheck(this, Gallery);
@@ -14554,8 +14630,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return Gallery;
     }(_react2.default.Component);
 
-    var Contact = function (_React$Component9) {
-        _inherits(Contact, _React$Component9);
+    var Contact = function (_React$Component11) {
+        _inherits(Contact, _React$Component11);
 
         function Contact() {
             _classCallCheck(this, Contact);
@@ -14577,8 +14653,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return Contact;
     }(_react2.default.Component);
 
-    var Menu = function (_React$Component10) {
-        _inherits(Menu, _React$Component10);
+    var Menu = function (_React$Component12) {
+        _inherits(Menu, _React$Component12);
 
         function Menu() {
             _classCallCheck(this, Menu);
@@ -14657,8 +14733,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return Menu;
     }(_react2.default.Component);
 
-    var App = function (_React$Component11) {
-        _inherits(App, _React$Component11);
+    var App = function (_React$Component13) {
+        _inherits(App, _React$Component13);
 
         function App() {
             _classCallCheck(this, App);
@@ -14677,6 +14753,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         { path: '/', component: Template },
                         _react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
                         _react2.default.createElement(_reactRouter.Route, { path: '/news', component: News }),
+                        _react2.default.createElement(_reactRouter.Route, { path: '/news/news1', component: News1Extend }),
                         _react2.default.createElement(_reactRouter.Route, { path: '/match', component: Match }),
                         _react2.default.createElement(_reactRouter.Route, { path: '/players', component: Players }),
                         _react2.default.createElement(_reactRouter.Route, { path: '/gallery', component: Gallery }),
@@ -25767,7 +25844,7 @@ exports = module.exports = __webpack_require__(219)(false);
 
 
 // module
-exports.push([module.i, ".menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: center; }\n  .menu li {\n    justify-content: center;\n    list-style: none;\n    flex-grow: 1;\n    text-align: center; }\n    .menu li .indexLink {\n      text-decoration: none;\n      color: black; }\n\ntable, th, td {\n  border: 1px solid black;\n  text-align: center; }\n\ntd {\n  width: 280px; }\n\np {\n  margin-top: 100px;\n  text-align: center; }\n\n.table1, .table2 {\n  display: flex;\n  justify-content: center; }\n\nimg {\n  width: 280px;\n  height: 150px; }\n\nsection {\n  display: flex;\n  flex-wrap: wrap; }\n  section .playersTable {\n    margin-right: 30px;\n    margin-top: 50px;\n    display: flex;\n    justify-content: center;\n    flex-direction: row;\n    flex-wrap: wrap; }\n", ""]);
+exports.push([module.i, ".menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: center; }\n  .menu li {\n    justify-content: center;\n    list-style: none;\n    flex-grow: 1;\n    text-align: center; }\n    .menu li .indexLink {\n      text-decoration: none;\n      color: black; }\n\n.news1 {\n  display: flex;\n  width: 800px;\n  margin: 50px auto; }\n  .news1 img {\n    width: 250px;\n    height: 150px; }\n  .news1 span {\n    margin-left: 30px;\n    font-size: 20px;\n    display: flex;\n    flex-direction: column; }\n    .news1 span p {\n      font-size: 14px; }\n\n.coach {\n  width: 700px;\n  margin: 30px auto;\n  display: flex;\n  flex-direction: column; }\n  .coach h1 {\n    text-align: center; }\n  .coach img {\n    width: 500px;\n    height: 350px;\n    margin: 50px auto; }\n\ntable, th, td {\n  border: 1px solid black;\n  text-align: center; }\n\ntd {\n  width: 280px; }\n\n.par1 {\n  margin-top: 100px;\n  text-align: center; }\n\n.table1, .table2 {\n  display: flex;\n  justify-content: center; }\n\nimg {\n  width: 280px;\n  height: 150px; }\n\nsection {\n  display: flex;\n  flex-wrap: wrap; }\n  section .playersTable {\n    margin: 20px auto;\n    display: flex;\n    justify-content: center;\n    flex-direction: row;\n    flex-wrap: wrap; }\n", ""]);
 
 // exports
 

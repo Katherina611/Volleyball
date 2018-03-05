@@ -11,6 +11,33 @@
       text-decoration: none;
       color: black; }
 
+.news1 {
+  display: flex;
+  width: 800px;
+  margin: 50px auto; }
+  .news1 img {
+    width: 250px;
+    height: 150px; }
+  .news1 span {
+    margin-left: 30px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; }
+    .news1 span p {
+      font-size: 14px; }
+
+.coach {
+  width: 700px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column; }
+  .coach h1 {
+    text-align: center; }
+  .coach img {
+    width: 500px;
+    height: 350px;
+    margin: 50px auto; }
+
 table, th, td {
   border: 1px solid black;
   text-align: center; }
@@ -18,7 +45,7 @@ table, th, td {
 td {
   width: 280px; }
 
-p {
+.par1 {
   margin-top: 100px;
   text-align: center; }
 
@@ -34,8 +61,7 @@ section {
   display: flex;
   flex-wrap: wrap; }
   section .playersTable {
-    margin-right: 30px;
-    margin-top: 50px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     flex-direction: row;

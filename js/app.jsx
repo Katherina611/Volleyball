@@ -32,10 +32,58 @@ document.addEventListener('DOMContentLoaded', function(){
             return (
                 <div className='news'>
                     <Menu/>
+                    <News1/>
                 </div>
             )
         }
     }
+
+    class News1 extends React.Component{
+        render(){
+            return (
+                <div className='news1'>
+                    <img src="images/trener.jpg"/>
+                    <span><IndexLink to="/news/news1">Kim jest nowy trener polskich siatkarzy?</IndexLink>
+                    <p>
+                        Ma 48 lat, biegle włada kilkoma językami i ma niekonwencjonalny sposób
+                        prowadzenia drużyn – Belg Vital Heynen został selekcjonerem kadry polskich
+                        siatkarzy i podjął się trudnego zadania. W swojej karierze udowodnił, że
+                        umie poprowadzić zespół do sukcesów.
+                    </p>
+                    </span>
+                </div>
+            )
+        }
+    }
+    class News1Extend extends React.Component{
+        render(){
+            return (
+                <div className='coach'>
+                    <h1>Kim jest nowy trener polskich siatkarzy?</h1>
+                    <img src="images/trener.jpg"/>
+                    <span>
+                        Opinie o Heynenie są różne. Jedni mówią, że to selekcjoner na lata,
+                        inni, że dobry na rok. Pewne jest, że Belg potrafi znaleźć wspólny
+                        język z wielkimi gwiazdami, a także z juniorami. Potrafi scalić zespół,
+                        sprawić, by wszyscy szli za nim w ogień. Udowodnił to już dwukrotnie –
+                        najpierw z reprezentacją Niemiec, a potem Belgii.
+                        W wyścigu o fotel szkoleniowca polskiej kadry w ostatnim etapie pokonał dwóch
+                        Polaków – Piotra Gruszkę i Andrzeja Kowala. Miał jedną ważną przewagę nad
+                        pozostałymi kandydatami – prowadził już narodowe kadry i to z sukcesem.
+                        Belg prowadził także kilka zespołów klubowych. Teraz jest trenerem niemieckiego VfB
+                        Friedrichshafen i dostał zgodę od polskiego związku, by łączyć oba stanowiska.
+                        Znany jest także z PlusLigi – w latach 2013-15 pracował z siatkarzami
+                        Transferu Bydgoszcz. A szkoleniową karierę zaczynał z Noliko Maseeik,
+                        belgijski klub objął w 2005 roku i spędził tam siedem lat. Wcześniej występował w nim
+                        w roli rozgrywającego. Zresztą to jedyny klub, z jakim był związany jako zawodnik. Rok pracował
+                        też w tureckim Ziraat Bankasi Ankara (2012/13) i francuskim Tours VB (2015/16).
+                    </span>
+                    <IndexLink to="/news">Wróć do aktualności</IndexLink>
+                </div>
+            )
+        }
+    }
+
     class Match extends React.Component{
         render(){
             return (
@@ -67,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function(){
             });
             return (
                 <div>
-                    <p>Terminarz pierwszej fazy MŚ 2018 siatkarzy</p>
+                    <p className='par1'>Terminarz pierwszej fazy MŚ 2018 siatkarzy</p>
                     <div className='table1'>
                         <table>
                             <thead>
@@ -106,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function(){
             });
             return (
                 <div>
-                    <p>Terminarz Ligi Światowej 2018 siatkarzy</p>
+                    <p className='par1'>Terminarz Ligi Światowej 2018 siatkarzy</p>
                     <div className='table2'>
                         <table>
                             <thead>
@@ -139,9 +187,11 @@ document.addEventListener('DOMContentLoaded', function(){
                 {name:'Fabian Drzyzga', number:'11', data:"3 stycznia 1990r. Bordeaux", height:'196 cm',weight:'86kg', position:'rozgrywający', attack:'342 cm', block:'305cm', club:'Olympiakos Pireus', img:'images/Fabian-Drzyzga.jpeg'},
                 {name:'Grzegorz Łomacz', number:'12', data:"1 października 1987r. Ostrołęka", height:'178 cm',weight:'81kg', position:'rozgrywający', attack:'336 cm', block:'309cm', club:'PGE Skra Bełchatów', img:'images/Grzegorz-Łomacz.jpg'},
                 {name:'Michał Kubiak', number:'13', data:"23 lutego 1988r. Wałcz", height:'191 cm',weight:'87kg', position:'przyjmujący', attack:'340 cm', block:'320cm', club:'Panasonic Panthers', img:'images/Michał-Kubiak.jpeg'},
+                {name:'Aleksander Śliwka', number:'14', data:"24 maja 1995r. Jawor", height:'196 cm',weight:'83kg', position:'przyjmujący', attack:'342 cm', block:'325cm', club:'Asseco Resovia Rzeszów', img:'images/Aleksander-Śliwka.jpeg'},
                 {name:'Paweł Zatorski', number:'17', data:"21 czerwca 1990r. Łódź", height:'184 cm',weight:'73kg', position:'libero', attack:'328 cm', block:'304cm', club:'ZAKSA Kędzierzyn-Koźle', img:'images/Paweł-Zatorski.jpg'},
                 {name:'Rafał Buszek', number:'21', data:"28 kwietnia 1987r. Dębica", height:'196 cm',weight:'81kg', position:'przyjmujący', attack:'348 cm', block:'327cm', club:'ZAKSA Kędzierzyn-Koźle', img:'images/Rafał-Buszek.jpeg'},
                 {name:'Mateusz Bieniek', number:'23', data:"5 kwietnia 1994r. Blachownia", height:'210 cm',weight:'98kg', position:'środkowy', attack:'351 cm', block:'329cm', club:'ZAKSA Kędzierzyn-Koźle', img:'images/Mateusz-Bieniek.jpeg'},
+                {name:'Artur Szalpuk', number:'25', data:"20 marca 1995r. Olsztyn", height:'202 cm',weight:'91kg', position:'przyjmujący', attack:'350 cm', block:'335cm', club:'Traefl Gdańsk', img:'images/Artur-Szalpuk.jpg'},
             ];
             const players=playersInfo.map((i, index)=>{
                 return (
@@ -235,6 +285,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     <Route path='/' component={Template}>
                         <IndexRoute component={Home}/>
                         <Route path='/news' component={News}/>
+                        <Route path='/news/news1' component={News1Extend}/>
                         <Route path='/match' component={Match}/>
                         <Route path='/players' component={Players}/>
                         <Route path='/gallery' component={Gallery}/>
