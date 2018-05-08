@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 <div className='news'>
                     <Menu/>
                     <News1/>
+                    <News2/>
                 </div>
             )
         }
@@ -78,6 +79,54 @@ document.addEventListener('DOMContentLoaded', function(){
                         w roli rozgrywającego. Zresztą to jedyny klub, z jakim był związany jako zawodnik. Rok pracował
                         też w tureckim Ziraat Bankasi Ankara (2012/13) i francuskim Tours VB (2015/16).
                     </span>
+                    <IndexLink to="/news">Wróć do aktualności</IndexLink>
+                </div>
+            )
+        }
+    }
+    class News2 extends React.Component{
+        render(){
+            return (
+                <div className='news1'>
+                    <img src="images/news2.jpg"/>
+                    <span><IndexLink to="/news/news2">Polscy siatkarze rozpoczynają przygotowania pod wodzą Heynena</IndexLink>
+                    <p>
+                        Powołani do szerokiej kadry na mecze Ligi Narodów polscy siatkarze przyjadą
+                        do Warszawy, by w dwóch kolejnych dniach przejść badania i załatwić procedury
+                        wizowe. Potem przeniosą się do Spały, gdzie zaczną treningi pod wodzą Vitala
+                        Heynena.
+                    </p>
+                    </span>
+                </div>
+            )
+        }
+    }
+
+    class News2Extend extends React.Component{
+        render(){
+            return (
+                <div className='coach'>
+                    <h1>Polscy siatkarze rozpoczynają przygotowania pod wodzą Heynena</h1>
+                    <img src="images/news2.jpg"/>
+                    <div>
+                        <span>Heynen, który dopiero rozpoczyna pracę w roli szkoleniowca biało-czerwonych,
+                        powołał do szerokiej kadry 26 zawodników. Dodatkowo do udziału w zajęciach
+                        w Spale zaprosił rozgrywającego Łukasza Kozuba i libero Mateusza Masłowskiego,
+                        którzy nie są przewidziani do występu w LN. W poniedziałkowy wieczór kadrowicze
+                        nie będą jeszcze jednak w komplecie.
+                        Jak poinformował rzecznik polskiej reprezentacji Mariusz Szyszko, zgrupowanie rozpocznie się
+                        tak naprawdę w czwartek,kiedy rano odbędzie się w Spale pierwszy trening.
+                        Zajęcia poprowadzi Heynen.Belg w lutym zastąpił zwolnionego w ubiegłym roku -
+                        po nieudanym występie w mistrzostwach Europy - Włocha Ferdinando De Giorgiego.
+                        </span>
+                        <div className="news-bold">Kadra na mecze Ligi Narodów siatkarzy 2018:<br></br>
+                            <p>rozgrywający: Fabian Drzyzga (Olympiakos Pireus), Grzegorz Łomacz, Marcin Janusz (obaj PGE Skra Bełchatów), Marcin Komenda (GKS Katowice);</p>
+                            <p>przyjmujący: Bartosz Bednorz (PGE Skra Bełchatów), Tomasz Fornal (Cerrad Czarni Radom), Michał Kubiak (Panasonic Panthers, Japonia), Bartosz Kwolek (ONICO Warszawa), Artur Szalpuk, Mateusz Mika (obaj Trefl Gdańsk), Aleksander Śliwka (Asseco Resovia Rzeszów);</p>
+                            <p>atakujący: Łukasz Kaczmarek (Cuprum Lubin), Dawid Konarski (Jastrzębski Węgiel), Bartosz Kurek (Ziraat Bankasi), Maciej Muzaj (Jastrzębski Węgiel), Damian Schulz (Trefl Gdańsk);</p>
+                            <p>środkowi: Mateusz Bieniek (ZAKSA Kędzierzyn-Koźle), Norbert Huber (Cerrad Czarni Radom), Jakub Kochanowski (Indykpol AZS Olsztyn), Bartłomiej Lemański (Asseco Resovia Rzeszów), Jan Nowakowski (ONICO Warszawa), Piotr Nowakowski (Trefl Gdańsk);</p>
+                            <p>libero: Kacper Piechocki (PGE Skra Bełchatów), Damian Wojtaszek (ONICO Warszawa), Paweł Zatorski (ZAKSA Kędzierzyn-Koźle), Michał Żurek (Indykpol AZS Olsztyn)</p>
+                        </div>
+                    </div>
                     <IndexLink to="/news">Wróć do aktualności</IndexLink>
                 </div>
             )
@@ -286,6 +335,7 @@ document.addEventListener('DOMContentLoaded', function(){
                         <IndexRoute component={Home}/>
                         <Route path='/news' component={News}/>
                         <Route path='/news/news1' component={News1Extend}/>
+                        <Route path='/news/news2' component={News2Extend}/>
                         <Route path='/match' component={Match}/>
                         <Route path='/players' component={Players}/>
                         <Route path='/gallery' component={Gallery}/>
